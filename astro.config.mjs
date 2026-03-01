@@ -1,0 +1,12 @@
+import { defineConfig } from 'astro/config'
+import tailwind from '@astrojs/tailwind'
+
+export default defineConfig({
+  site: 'https://www.yaholink.fr',
+  integrations: [tailwind()],
+  output: 'static',
+  server: {
+    host: '0.0.0.0',
+    port: 4321,
+  },
+})
